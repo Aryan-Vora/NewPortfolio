@@ -8,9 +8,9 @@ import { Spotlight } from './ui/spotlight';
 const Hero = () => {
   return (
     <Spotlight className="min-h-screen flex items-center justify-center bg-[#0A0A0A] overflow-hidden">
-      <div className="container mx-auto px-6 flex flex-col md:flex-row items-center">
+      <div className="container mx-auto px-6">
         <motion.div
-          className="md:w-1/2 text-center md:text-left"
+          className="w-full text-center md:text-left max-w-3xl mx-auto"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -89,6 +89,7 @@ const Hero = () => {
             </motion.a>
           </motion.div>
         </motion.div>
+        {/* Avatar section commented out
         <motion.div
           className="md:w-1/2 mt-12 md:mt-0 relative"
           initial={{ opacity: 0, scale: 0.8 }}
@@ -111,6 +112,7 @@ const Hero = () => {
             </div>
           </div>
         </motion.div>
+        */}
       </div>
     </Spotlight>
   );
