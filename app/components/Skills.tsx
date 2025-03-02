@@ -94,10 +94,6 @@ const skillGroups = [
         icon: '/icons/postgresql.svg',
       },
       {
-        name: 'SQL',
-        icon: '/icons/sql.svg',
-      },
-      {
         name: 'MongoDB',
         icon: '/icons/mongodb.svg',
       },
@@ -113,10 +109,6 @@ const skillGroups = [
       {
         name: 'Git',
         icon: '/icons/git.svg',
-      },
-      {
-        name: 'GitHub',
-        icon: '/icons/github.svg',
       },
       {
         name: 'CI/CD',
