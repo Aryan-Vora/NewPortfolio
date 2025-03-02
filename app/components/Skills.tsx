@@ -28,7 +28,7 @@ const skillGroups = [
     ],
   },
   {
-    category: 'Machine Learning & Deep Learning',
+    category: 'AI & Machine Learning',
     skills: [
       {
         name: 'langchain',
