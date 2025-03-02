@@ -11,19 +11,19 @@ const skillGroups = [
     skills: [
       {
         name: 'Python',
-        icon: '',
+        icon: '/icons/python.svg',
       },
       {
         name: 'JavaScript',
-        icon: '',
+        icon: '/icons/javascript.svg',
       },
       {
         name: 'C/C++',
-        icon: '',
+        icon: '/icons/c.svg',
       },
       {
         name: 'Java',
-        icon: '',
+        icon: '/icons/java.svg',
       },
     ],
   },
@@ -32,32 +32,32 @@ const skillGroups = [
     skills: [
       {
         name: 'langchain',
-        icon: '',
+        icon: '/icons/langchain.svg',
       },
       {
         name: 'llamaindex',
-        icon: '',
+        icon: '/icons/llamaindex.svg',
       },
       {
         name: 'scikit-learn',
-        icon: '',
+        icon: '/icons/scikit-learn.svg',
       },
 
       {
         name: 'PyTorch',
-        icon: '',
+        icon: '/icons/pytorch.svg',
       },
       {
         name: 'Pandas',
-        icon: '',
+        icon: '/icons/pandas.svg',
       },
       {
         name: 'NumPy',
-        icon: '',
+        icon: '/icons/numpy.svg',
       },
       {
-        'name': 'openCV',
-        'icon': '',
+        'name': 'OpenCV',
+        'icon': '/icons/opencv.svg',
       },
     ],
   },
@@ -66,23 +66,23 @@ const skillGroups = [
     skills: [
       {
         name: 'AWS',
-        icon: '',
+        icon: '/icons/aws.svg',
       },
       {
         name: 'GCP',
-        icon: '',
+        icon: '/icons/gcp.svg',
       },
       {
         name: 'Firebase',
-        icon: '',
+        icon: '/icons/firebase.svg',
       },
       {
         name: 'Heroku',
-        icon: '',
+        icon: '/icons/heroku.svg',
       },
       {
         name: 'Vercel',
-        icon: '',
+        icon: '/icons/vercel.svg',
       },
     ],
   },
@@ -91,19 +91,19 @@ const skillGroups = [
     skills: [
       {
         name: 'PostgreSQL',
-        icon: '',
+        icon: '/icons/postgresql.svg',
       },
       {
         name: 'SQL',
-        icon: '',
+        icon: '/icons/sql.svg',
       },
       {
         name: 'MongoDB',
-        icon: '',
+        icon: '/icons/mongodb.svg',
       },
       {
         name: 'Supabase',
-        icon: '',
+        icon: '/icons/supabase.svg',
       },
     ],
   },
@@ -112,19 +112,19 @@ const skillGroups = [
     skills: [
       {
         name: 'Git',
-        icon: '',
+        icon: '/icons/git.svg',
       },
       {
         name: 'GitHub',
-        icon: '',
+        icon: '/icons/github.svg',
       },
       {
         name: 'CI/CD',
-        icon: '',
+        icon: '/icons/cicd.svg',
       },
       {
         name: 'Linux',
-        icon: '',
+        icon: '/icons/linux.svg',
       },
     ],
   },
