@@ -10,7 +10,7 @@ const Hero = () => {
     <Spotlight className="min-h-screen flex items-center justify-center bg-[#0A0A0A] overflow-hidden">
       <div className="container mx-auto px-6">
         <motion.div
-          className="w-full text-center md:text-left max-w-3xl mx-auto"
+          className="w-full text-center max-w-3xl mx-auto"
           initial={{ opacity: 0, x: -20 }}
           animate={{ opacity: 1, x: 0 }}
           transition={{ duration: 0.5, ease: 'easeOut' }}
@@ -37,26 +37,24 @@ const Hero = () => {
             initial={{ opacity: 0, y: 20 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.8 }}
-            className="flex flex-wrap justify-center md:justify-start gap-6"
+            className="flex flex-wrap justify-center gap-6"
           >
-            {/* GitHub Icon */}
             <motion.a
               href="https://github.com/aryan-vora"
               target="_blank"
               rel="noopener noreferrer"
-              className="relative w-12 h-12  p-3 hover:bg-opacity-20 transition-all duration-300"
+              className="relative w-12 h-12 p-3 hover:bg-opacity-20 transition-all duration-300"
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
               <Image
                 src="/icons/github.png"
                 alt="GitHub"
-                layout="fill"
-                className=""
+                fill
+                className="object-contain"
               />
             </motion.a>
 
-            {/* Resume Icon */}
             <motion.a
               href="/resume.pdf"
               target="_blank"
@@ -65,7 +63,12 @@ const Hero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Image src="/icons/resume.png" alt="Medium" layout="fill" />
+              <Image
+                src="/icons/resume.png"
+                alt="Resume"
+                fill
+                className="object-contain"
+              />
             </motion.a>
             <motion.a
               href="https://medium.com/@AryanVora"
@@ -75,7 +78,12 @@ const Hero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Image src="/icons/medium.png" alt="Medium" layout="fill" />
+              <Image
+                src="/icons/medium.png"
+                alt="Medium"
+                fill
+                className="object-contain"
+              />
             </motion.a>
             <motion.a
               href="https://www.linkedin.com/in/aryanvora1/"
@@ -85,7 +93,12 @@ const Hero = () => {
               whileHover={{ scale: 1.1 }}
               whileTap={{ scale: 0.95 }}
             >
-              <Image src="/icons/linkedin.png" alt="LinkedIn" layout="fill" />
+              <Image
+                src="/icons/linkedin.png"
+                alt="LinkedIn"
+                fill
+                className="object-contain"
+              />
             </motion.a>
           </motion.div>
         </motion.div>
@@ -105,7 +118,7 @@ const Hero = () => {
               <Image
                 src="placeholder_user.png"
                 alt="Aryan Vora Avatar"
-                layout="fill"
+                fill
                 className="rounded-2xl shadow-2xl transform hover:scale-[1.02] transition-transform duration-300"
                 priority
               />
