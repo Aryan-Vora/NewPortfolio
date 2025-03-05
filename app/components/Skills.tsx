@@ -42,15 +42,6 @@ const skillGroups = [
         name: 'scikit-learn',
         icon: '/icons/scikit-learn.svg',
       },
-
-      {
-        name: 'PyTorch',
-        icon: '/icons/pytorch.svg',
-      },
-      {
-        name: 'Pandas',
-        icon: '/icons/pandas.svg',
-      },
       {
         name: 'NumPy',
         icon: '/icons/numpy.svg',
