@@ -1,7 +1,7 @@
 'use client';
 
-import { useEffect } from 'react';
-import { usePathname } from 'next/navigation';
+import { useEffect, useRef } from 'react';
+import { usePathname, useSearchParams } from 'next/navigation';
 
 interface ScrollToTopProps {
   children: React.ReactNode;
@@ -9,12 +9,22 @@ interface ScrollToTopProps {
 
 const ScrollToTop = ({ children }: ScrollToTopProps) => {
   const pathname = usePathname();
+  const searchParams = useSearchParams();
+  const isFirstRender = useRef(true);
 
   useEffect(() => {
-    if (!pathname.includes('#')) {
-      window.scrollTo(0, 0);
+    if (isFirstRender.current) {
+      isFirstRender.current = false;
+      return;
     }
-  }, [pathname]);
+    setTimeout(() => {
+      window.scrollTo({
+        top: 0,
+        left: 0,
+        behavior: 'auto',
+      });
+    }, 0);
+  }, [pathname, searchParams]);
 
   return <>{children}</>;
 };
