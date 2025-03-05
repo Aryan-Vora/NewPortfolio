@@ -8,14 +8,6 @@ import { AnimatedGradient } from './ui/animated-gradient';
 
 const projects = [
   {
-    title: 'Hand Tracking and Gesture Detection with AR Smart Glasses',
-    description:
-      "Collaborated with The Digital Camera and Computer Vision Lab at NTU on a real-time hand tracking and gesture recognition system for AR smart glasses, integrating Time-of-Flight (ToF) sensors with Mediapipe for precise 3D hand reconstruction and interactive capabilities. Through optimization efforts, the system's ability to simultaneously process ToF depth data and hand landmark tracking was significantly enhanced, resulting in a 60% FPS improvement from 15 to 24 FPS. Additionally, developed visualization tools for hand tracking and depth data monitoring, which streamlined debugging processes and enabled further system performance optimizations.",
-    image: '/project_pictures/handtracking.png',
-    link: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
-    technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
-  },
-  {
     title: 'AI-Powered Receipt Scanner',
     description:
       'During my internship at Squeezee, developed a cross-platform receipt-scanning application using React for the frontend and Firebase for the backend, ensuring seamless functionality across devices. Integrated OCRSpace for text extraction from scanned receipts and parsed and validated OCR results using a Large Language Model (LLM), converting unstructured text into structured, accurate data for storage and future analysis.',
@@ -29,6 +21,14 @@ const projects = [
       'OCRSpace',
       'OpenAI',
     ],
+  },
+  {
+    title: 'Hand Tracking and Gesture Detection with AR Smart Glasses',
+    description:
+      "Collaborated with The Digital Camera and Computer Vision Lab at NTU on a real-time hand tracking and gesture recognition system for AR smart glasses, integrating Time-of-Flight (ToF) sensors with Mediapipe for precise 3D hand reconstruction and interactive capabilities. Through optimization efforts, the system's ability to simultaneously process ToF depth data and hand landmark tracking was significantly enhanced, resulting in a 60% FPS improvement from 15 to 24 FPS. Additionally, developed visualization tools for hand tracking and depth data monitoring, which streamlined debugging processes and enabled further system performance optimizations.",
+    image: '/project_pictures/handtracking.png',
+    link: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
+    technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
   },
   {
     title: 'Pokernow Analytics Extension',

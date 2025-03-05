@@ -121,7 +121,6 @@ const skillGroups = [
     ],
   },
 ];
-
 const Skills = () => {
   const [ref, inView] = useInView({
     triggerOnce: true,
