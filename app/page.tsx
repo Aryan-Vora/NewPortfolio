@@ -18,7 +18,9 @@ export default function Home(props: HomeProps) {
     if (index === selected) {
       setTimeout(() => {
         if (childDiv.current) {
-          childDiv.current.scrollIntoView();
+          childDiv.current.scrollIntoView({
+            behavior: 'smooth',
+          });
         }
       }, 100);
     }
