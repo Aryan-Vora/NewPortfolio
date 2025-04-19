@@ -4,6 +4,7 @@ import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
 import { Share2 } from 'lucide-react';
+
 import { AnimatedGradient } from './ui/animated-gradient';
 
 const projects = [
@@ -12,7 +13,7 @@ const projects = [
     description:
       'During my internship at Squeezee, developed a cross-platform receipt-scanning application using React for the frontend and Firebase for the backend, ensuring seamless functionality across devices. Integrated OCRSpace for text extraction from scanned receipts and parsed and validated OCR results using a Large Language Model (LLM), converting unstructured text into structured, accurate data for storage and future analysis.',
     image: '/project_pictures/receipt-scanner.png',
-    link: 'https://github.com/Aryan-Vora/SqueezeeReceiptScanner',
+    code: 'https://github.com/Aryan-Vora/SqueezeeReceiptScanner',
     technologies: [
       'JavaScript',
       'React',
@@ -23,11 +24,20 @@ const projects = [
     ],
   },
   {
+    title: 'BrowserLogger',
+    description:
+      'BrowserLogger is a website that shows everything a browser can reveal about a user without asking for permission, including user actions, device info, location, network details, and more, all through JavaScript and public APIs. It captures things like mouse moves, keystrokes, IP address, screen size, etc.',
+    image: '/project_pictures/browserlogger.png',
+    link: 'https://aryan-vora.github.io/browserlogger/',
+    code: 'https://github.com/Aryan-Vora/browserlogger',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+  },
+  {
     title: 'Hand Tracking and Gesture Detection with AR Smart Glasses',
     description:
       "Collaborated with The Digital Camera and Computer Vision Lab at NTU on a real-time hand tracking and gesture recognition system for AR smart glasses, integrating Time-of-Flight (ToF) sensors with Mediapipe for precise 3D hand reconstruction and interactive capabilities. Through optimization efforts, the system's ability to simultaneously process ToF depth data and hand landmark tracking was significantly enhanced, resulting in a 60% FPS improvement from 15 to 24 FPS. Additionally, developed visualization tools for hand tracking and depth data monitoring, which streamlined debugging processes and enabled further system performance optimizations.",
     image: '/project_pictures/handtracking.png',
-    link: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
+    code: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
     technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
   },
   {
@@ -35,23 +45,17 @@ const projects = [
     description:
       'Developed a browser extension that enhances the PokerNow online poker platform by providing real-time analytics and game insights. Implemented features such as tracking player statistics, win rates, and betting patterns to help users make data-driven decisions. Built using JavaScript to ensure seamless integration with the PokerNow interface.',
     image: '/project_pictures/pokernow.png',
-    link: 'https://github.com/Aryan-Vora/PokerNow-Analytics-Extension',
+    code: 'https://github.com/Aryan-Vora/PokerNow-Analytics-Extension',
+    link: 'https://chromewebstore.google.com/detail/pokernow-assistant/kbaibgafcamlpfbhklaigpgemgoifdfe?pli=1',
     technologies: ['JavaScript'],
-  },
-  {
-    title: 'BiteRight',
-    description:
-      'Led and worked on the frontend development of a recipe discovery and management platform designed to provide personalized meal recommendations. Managed the project using Agile and Scrum methodologies and designed the UI/UX in Figma. Built core pages in Next.js, including user authentication, recipe search, filtering, landing, custom recipe pages, and ratings. Integrated dynamic features such as personalized recommendations, custom recipe creation, and a structured review system to enhance user experience. Used Supabase for storage and Deno for server-side logic',
-    image: '/project_pictures/biteright.png',
-    link: 'https://biteright.co/',
-    technologies: ['Next.js', 'Deno', 'Supabase', 'ClerkJS'],
   },
   {
     title: 'Platformer Game',
     description:
       'Created a 2D platformer game using Processing.java, featuring multiple levels, custom physics, character movement, and level design. Developed interactive game mechanics, including obstacle avoidance, jumping, and collectible items. Added background music and sound effects to enhance immersion. Designed challenging gameplay with increasing difficulty to keep players engaged. Focused on smooth performance and responsive controls for an enjoyable player experience.',
     image: '/project_pictures/platformer.png',
-    link: 'https://github.com/Aryan-Vora/Platformer',
+    code: 'https://github.com/Aryan-Vora/Platformer',
+    link: 'https://www.youtube.com/watch?v=NyL2scv_29g',
     technologies: ['Processing.java'],
   },
 ];
@@ -134,17 +138,48 @@ const Projects = () => {
                     </motion.span>
                   ))}
                 </div>
-                <motion.a
-                  href={project.link}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
-                  whileHover={{ scale: 1.05 }}
-                  whileTap={{ scale: 0.95 }}
-                >
-                  <Share2 className="w-4 h-4 mr-2" />
-                  View Project
-                </motion.a>
+                <div className="flex gap-4">
+                  {project.link && (
+                    <motion.a
+                      href={project.link}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Share2 className="w-4 h-4 mr-2" />
+                      View Project
+                    </motion.a>
+                  )}
+                  {project.code && (
+                    <motion.a
+                      href={project.code}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <svg
+                        xmlns="http://www.w3.org/2000/svg"
+                        width="16"
+                        height="16"
+                        viewBox="0 0 24 24"
+                        fill="none"
+                        stroke="currentColor"
+                        strokeWidth="2"
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        className="mr-2"
+                      >
+                        <path d="M15 22v-4a4.8 4.8 0 0 0-1-3.5c3 0 6-2 6-5.5.08-1.25-.27-2.48-1-3.5.28-1.15.28-2.35 0-3.5 0 0-1 0-3 1.5-2.64-.5-5.36-.5-8 0C6 2 5 2 5 2c-.3 1.15-.3 2.35 0 3.5A5.403 5.403 0 0 0 4 9c0 3.5 3 5.5 6 5.5-.39.49-.68 1.05-.85 1.65-.17.6-.22 1.23-.15 1.85v4" />
+                        <path d="M9 18c-4.51 2-5-2-7-2" />
+                      </svg>
+                      View Code
+                    </motion.a>
+                  )}
+                </div>
               </div>
             </motion.div>
           ))}
