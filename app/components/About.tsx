@@ -33,9 +33,9 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           {[
-            'I’m Aryan Vora, a Computer Science student at UC Santa Cruz, graduating early in June 2025. I love full-stack development and I’m looking for software engineering roles or internships that let me work on interesting projects. I enjoy breaking down complex problems and building creative solutions.',
-            'I have experience working on multiple projects and am always excited to learn and experiment with new technologies. I’m currently looking for summer internships or job opportunities where I can develop my technical skills and tackle meaningful challenges.',
-            'When I’m not coding, you can find me at the gym, playing sports (mainly pickleball and volleyball), or gaming. I love staying active and am always open to trying something new. I look forward to connecting with others who share a passion for building cool things and making an impact!',
+            'I’m Aryan Vora, a Computer Science student at UC Santa Cruz, graduating early in June 2025. I love full-stack development and enjoy turning ideas into real projects. I’m always working on side projects and try to build out every new idea I have. Coding is something I genuinely enjoy, especially watching my ideas come to life.',
+            'I like breaking down complex problems and finding creative solutions. I’ve worked on many projects using different technologies and I’m always eager to learn more. Right now, I’m looking for entry-level roles where I can grow my skills and contribute to meaningful work.',
+            'Outside of coding, I enjoy staying active. I spend time at the gym, play pickleball and volleyball, and like to game in my free time. I’m always open to trying new things and connecting with others who enjoy building and creating',
           ].map((paragraph, index) => (
             <motion.p
               key={index}

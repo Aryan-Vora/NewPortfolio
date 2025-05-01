@@ -3,7 +3,7 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'react-intersection-observer';
 import Image from 'next/image';
-import { Share2 } from 'lucide-react';
+import { Share2, Video } from 'lucide-react';
 
 import { AnimatedGradient } from './ui/animated-gradient';
 
@@ -21,6 +21,22 @@ const projects = [
       'GCP',
       'OCRSpace',
       'OpenAI',
+    ],
+  },
+  {
+    title: 'Github Vulnerability Scanner',
+    description:
+      'Web app that scans public GitHub repositories for vulnerabilities in the codebase, dependencies, and executable files. It uses GitHub API to fetch repository data and Gemini-2.0 Flash analyze it for potential security issues. The app provides a user-friendly interface for users to input repository URLs and view scan results, including identified vulnerabilities and recommendations to fix these.',
+    image: '/project_pictures/github_scanner.png',
+    code: 'https://github.com/Jeeevii/SecureAI',
+    demo: 'https://www.youtube.com/watch?v=f1LCjcX3dho',
+    technologies: [
+      'Python',
+      'React',
+      'FastAPI',
+      'Next.js',
+      'Tailwind CSS',
+      'Gemini',
     ],
   },
   {
@@ -55,7 +71,7 @@ const projects = [
       'Created a 2D platformer game using Processing.java, featuring multiple levels, custom physics, character movement, and level design. Developed interactive game mechanics, including obstacle avoidance, jumping, and collectible items. Added background music and sound effects to enhance immersion. Designed challenging gameplay with increasing difficulty to keep players engaged. Focused on smooth performance and responsive controls for an enjoyable player experience.',
     image: '/project_pictures/platformer.png',
     code: 'https://github.com/Aryan-Vora/Platformer',
-    link: 'https://www.youtube.com/watch?v=NyL2scv_29g',
+    demo: 'https://www.youtube.com/watch?v=NyL2scv_29g',
     technologies: ['Processing.java'],
   },
 ];
@@ -149,7 +165,7 @@ const Projects = () => {
                       whileTap={{ scale: 0.95 }}
                     >
                       <Share2 className="w-4 h-4 mr-2" />
-                      View Project
+                      Live Site
                     </motion.a>
                   )}
                   {project.code && (
@@ -177,6 +193,19 @@ const Projects = () => {
                         <path d="M9 18c-4.51 2-5-2-7-2" />
                       </svg>
                       View Code
+                    </motion.a>
+                  )}
+                  {project.demo && (
+                    <motion.a
+                      href={project.demo}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="inline-flex items-center text-blue-400 hover:text-blue-300 transition-colors"
+                      whileHover={{ scale: 1.05 }}
+                      whileTap={{ scale: 0.95 }}
+                    >
+                      <Video className="w-4 h-4 mr-2" />
+                      Demo
                     </motion.a>
                   )}
                 </div>
