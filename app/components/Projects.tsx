@@ -8,6 +8,21 @@ import { Share2, Video } from 'lucide-react';
 import { AnimatedGradient } from './ui/animated-gradient';
 
 const projects = [
+    {
+    title: 'StockSentiment',
+    description:
+      'A full-stack app to analyze and visualize stock sentiment using Reddit posts and financial data. Fetched stock data from yFinance and Reddit posts via API, applied VADER sentiment analysis, and displayed sentiment scores with stock trends on an interactive dashboard. Built with FastAPI (backend) and Next.js (frontend). Deployed backend on Amazon EC2 and frontend on Vercel',
+    code: 'https://github.com/Aryan-Vora/StockSentiment',
+    link: "https://stock-sentiment-eosin.vercel.app/",
+    image: '/project_pictures/stocksentiment.png',
+    technologies: [
+      'TypeScript',
+      'Next.js',
+      'AWS',
+      'FastAPI',
+      'VADER',
+    ],
+  },
   {
     title: 'AI-Powered Receipt Scanner',
     description:
