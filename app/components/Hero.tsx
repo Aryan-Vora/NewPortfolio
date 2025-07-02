@@ -28,10 +28,7 @@ const Hero = () => {
             />
           </h2>
           <p className="text-gray-400 mb-8">
-            Hi, I’m Aryan Vora, a Computer Science student at UC Santa Cruz,
-            passionate about full-stack development and problem-solving. I’m
-            currently looking for entry level roles where I can can apply my
-            skills and work on innovative projects.
+            I’m a Computer Science graduate passionate about building projects and solving problems. I’m currently looking for entry-level roles where I can apply my skills and work on innovative projects.
           </p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
