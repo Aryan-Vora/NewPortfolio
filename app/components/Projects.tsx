@@ -8,20 +8,23 @@ import { Share2, Video } from 'lucide-react';
 import { AnimatedGradient } from './ui/animated-gradient';
 
 const projects = [
-    {
+  {
+    title: 'SoulSync',
+    description:
+      'A personality-driven music discovery platform that matches users with songs based on their unique traits and characteristics. Features an intelligent quiz system with over 50 personality questions, where users answer 12 dynamically selected questions that adapt based on previous responses.',
+    code: 'https://github.com/Aryan-Vora/SoulSync',
+    link: 'https://soulsyncmusic.vercel.app/',
+    image: '/project_pictures/soulsync.png',
+    technologies: ['TypeScript', 'Next.js', 'Spotify API', 'OpenAI'],
+  },
+  {
     title: 'StockSentiment',
     description:
       'A full-stack app to analyze and visualize stock sentiment using Reddit posts and financial data. Fetched stock data from yFinance and Reddit posts via API, applied VADER sentiment analysis, and displayed sentiment scores with stock trends on an interactive dashboard. Built with FastAPI (backend) and Next.js (frontend). Deployed backend on Amazon EC2 and frontend on Vercel',
     code: 'https://github.com/Aryan-Vora/StockSentiment',
-    link: "https://stock-sentiment-eosin.vercel.app/",
+    link: 'https://stock-sentiment-eosin.vercel.app/',
     image: '/project_pictures/stocksentiment.png',
-    technologies: [
-      'TypeScript',
-      'Next.js',
-      'AWS',
-      'FastAPI',
-      'VADER',
-    ],
+    technologies: ['TypeScript', 'Next.js', 'AWS', 'FastAPI', 'VADER'],
   },
   {
     title: 'AI-Powered Receipt Scanner',
@@ -39,6 +42,14 @@ const projects = [
     ],
   },
   {
+    title: 'Hand Tracking and Gesture Detection with AR Smart Glasses',
+    description:
+      "Collaborated with The Digital Camera and Computer Vision Lab at NTU on a real-time hand tracking and gesture recognition system for AR smart glasses, integrating Time-of-Flight (ToF) sensors with Mediapipe for precise 3D hand reconstruction and interactive capabilities. Through optimization efforts, the system's ability to simultaneously process ToF depth data and hand landmark tracking was significantly enhanced, resulting in a 60% FPS improvement from 15 to 24 FPS. Additionally, developed visualization tools for hand tracking and depth data monitoring, which streamlined debugging processes and enabled further system performance optimizations.",
+    image: '/project_pictures/handtracking.png',
+    code: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
+    technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
+  },
+  {
     title: 'Github Vulnerability Scanner',
     description:
       'Web app that scans public GitHub repositories for vulnerabilities in the codebase, dependencies, and executable files. It uses GitHub API to fetch repository data and Gemini-2.0 Flash analyze it for potential security issues. The app provides a user-friendly interface for users to input repository URLs and view scan results, including identified vulnerabilities and recommendations to fix these.',
@@ -54,6 +65,7 @@ const projects = [
       'Gemini',
     ],
   },
+
   {
     title: 'BrowserLogger',
     description:
@@ -62,14 +74,6 @@ const projects = [
     link: 'https://aryan-vora.github.io/browserlogger/',
     code: 'https://github.com/Aryan-Vora/browserlogger',
     technologies: ['JavaScript', 'HTML', 'CSS'],
-  },
-  {
-    title: 'Hand Tracking and Gesture Detection with AR Smart Glasses',
-    description:
-      "Collaborated with The Digital Camera and Computer Vision Lab at NTU on a real-time hand tracking and gesture recognition system for AR smart glasses, integrating Time-of-Flight (ToF) sensors with Mediapipe for precise 3D hand reconstruction and interactive capabilities. Through optimization efforts, the system's ability to simultaneously process ToF depth data and hand landmark tracking was significantly enhanced, resulting in a 60% FPS improvement from 15 to 24 FPS. Additionally, developed visualization tools for hand tracking and depth data monitoring, which streamlined debugging processes and enabled further system performance optimizations.",
-    image: '/project_pictures/handtracking.png',
-    code: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
-    technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
   },
   {
     title: 'Pokernow Analytics Extension',
