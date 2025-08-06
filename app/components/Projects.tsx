@@ -18,6 +18,15 @@ const projects = [
     technologies: ['TypeScript', 'Next.js', 'Spotify API', 'OpenAI'],
   },
   {
+    title: 'CinemaBlend',
+    description:
+      'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy. Built with FastAPI and Next.js.',
+    code: 'https://github.com/Aryan-Vora/letterboxblend',
+    link: 'https://cinemablend.vercel.app/',
+    image: '/project_pictures/cinemablend.png',
+    technologies: ['TypeScript', 'Next.js', 'OMDB API', 'FastAPI', 'Python'],
+  },
+  {
     title: 'StockSentiment',
     description:
       'A full-stack app to analyze and visualize stock sentiment using Reddit posts and financial data. Fetched stock data from yFinance and Reddit posts via API, applied VADER sentiment analysis, and displayed sentiment scores with stock trends on an interactive dashboard. Built with FastAPI (backend) and Next.js (frontend). Deployed backend on Amazon EC2 and frontend on Vercel',
@@ -50,6 +59,15 @@ const projects = [
     technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
   },
   {
+    title: 'BrowserLogger',
+    description:
+      'BrowserLogger is a website that shows everything a browser can reveal about a user without asking for permission, including user actions, device info, location, network details, and more, all through JavaScript and public APIs. It captures things like mouse moves, keystrokes, IP address, screen size, etc.',
+    image: '/project_pictures/browserlogger.png',
+    link: 'https://aryan-vora.github.io/browserlogger/',
+    code: 'https://github.com/Aryan-Vora/browserlogger',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+  },
+  {
     title: 'Github Vulnerability Scanner',
     description:
       'Web app that scans public GitHub repositories for vulnerabilities in the codebase, dependencies, and executable files. It uses GitHub API to fetch repository data and Gemini-2.0 Flash analyze it for potential security issues. The app provides a user-friendly interface for users to input repository URLs and view scan results, including identified vulnerabilities and recommendations to fix these.',
@@ -64,16 +82,6 @@ const projects = [
       'Tailwind CSS',
       'Gemini',
     ],
-  },
-
-  {
-    title: 'BrowserLogger',
-    description:
-      'BrowserLogger is a website that shows everything a browser can reveal about a user without asking for permission, including user actions, device info, location, network details, and more, all through JavaScript and public APIs. It captures things like mouse moves, keystrokes, IP address, screen size, etc.',
-    image: '/project_pictures/browserlogger.png',
-    link: 'https://aryan-vora.github.io/browserlogger/',
-    code: 'https://github.com/Aryan-Vora/browserlogger',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
   },
   {
     title: 'Pokernow Analytics Extension',
