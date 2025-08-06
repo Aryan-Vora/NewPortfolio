@@ -9,15 +9,6 @@ import { AnimatedGradient } from './ui/animated-gradient';
 
 const projects = [
   {
-    title: 'SoulSync',
-    description:
-      'A personality-driven music discovery platform that matches users with songs based on their unique traits and characteristics. Features an intelligent quiz system with over 50 personality questions, where users answer 12 dynamically selected questions that adapt based on previous responses.',
-    code: 'https://github.com/Aryan-Vora/SoulSync',
-    link: 'https://soulsyncmusic.vercel.app/',
-    image: '/project_pictures/soulsync.png',
-    technologies: ['TypeScript', 'Next.js', 'Spotify API', 'OpenAI'],
-  },
-  {
     title: 'CinemaBlend',
     description:
       'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy.',
@@ -36,6 +27,14 @@ const projects = [
     technologies: ['TypeScript', 'Next.js', 'AWS', 'FastAPI', 'VADER'],
   },
   {
+    title: 'Hand Tracking and Gesture Detection with AR Smart Glasses',
+    description:
+      "Collaborated with The Digital Camera and Computer Vision Lab at NTU on a real-time hand tracking and gesture recognition system for AR smart glasses, integrating Time-of-Flight (ToF) sensors with Mediapipe for precise 3D hand reconstruction and interactive capabilities. Through optimization efforts, the system's ability to simultaneously process ToF depth data and hand landmark tracking was significantly enhanced, resulting in a 60% FPS improvement from 15 to 24 FPS. Additionally, developed visualization tools for hand tracking and depth data monitoring, which streamlined debugging processes and enabled further system performance optimizations.",
+    image: '/project_pictures/handtracking.png',
+    code: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
+    technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
+  },
+  {
     title: 'AI-Powered Receipt Scanner',
     description:
       'During my internship at Squeezee, developed a cross-platform receipt-scanning application using React for the frontend and Firebase for the backend, ensuring seamless functionality across devices. Integrated OCRSpace for text extraction from scanned receipts and parsed and validated OCR results using a Large Language Model (LLM), converting unstructured text into structured, accurate data for storage and future analysis.',
@@ -51,14 +50,6 @@ const projects = [
     ],
   },
   {
-    title: 'Hand Tracking and Gesture Detection with AR Smart Glasses',
-    description:
-      "Collaborated with The Digital Camera and Computer Vision Lab at NTU on a real-time hand tracking and gesture recognition system for AR smart glasses, integrating Time-of-Flight (ToF) sensors with Mediapipe for precise 3D hand reconstruction and interactive capabilities. Through optimization efforts, the system's ability to simultaneously process ToF depth data and hand landmark tracking was significantly enhanced, resulting in a 60% FPS improvement from 15 to 24 FPS. Additionally, developed visualization tools for hand tracking and depth data monitoring, which streamlined debugging processes and enabled further system performance optimizations.",
-    image: '/project_pictures/handtracking.png',
-    code: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
-    technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
-  },
-  {
     title: 'BrowserLogger',
     description:
       'BrowserLogger is a website that shows everything a browser can reveal about a user without asking for permission, including user actions, device info, location, network details, and more, all through JavaScript and public APIs. It captures things like mouse moves, keystrokes, IP address, screen size, etc.',
@@ -66,6 +57,15 @@ const projects = [
     link: 'https://aryan-vora.github.io/browserlogger/',
     code: 'https://github.com/Aryan-Vora/browserlogger',
     technologies: ['JavaScript', 'HTML', 'CSS'],
+  },
+  {
+    title: 'SoulSync',
+    description:
+      'A personality-driven music discovery platform that matches users with songs based on their unique traits and characteristics. Features an intelligent quiz system with over 50 personality questions, where users answer 12 dynamically selected questions that adapt based on previous responses.',
+    code: 'https://github.com/Aryan-Vora/SoulSync',
+    link: 'https://soulsyncmusic.vercel.app/',
+    image: '/project_pictures/soulsync.png',
+    technologies: ['TypeScript', 'Next.js', 'Spotify API', 'OpenAI'],
   },
   {
     title: 'Github Vulnerability Scanner',
@@ -86,7 +86,7 @@ const projects = [
   {
     title: 'Pokernow Analytics Extension',
     description:
-      'Developed a browser extension that enhances the PokerNow online poker platform by providing real-time analytics and game insights. Implemented features such as tracking player statistics, win rates, and betting patterns to help users make data-driven decisions. Built using JavaScript to ensure seamless integration with the PokerNow interface.',
+      'Developed a browser extension that enhances the PokerNow online poker platform by providing real-time analytics and game insights. Implemented features such as tracking player statistics, win rates, and betting patterns to help users make data-driven decisions. Built using JavaScript to ensure seamless integration with the PokerNow interface. Has hundreds of active current users.',
     image: '/project_pictures/pokernow.png',
     code: 'https://github.com/Aryan-Vora/PokerNow-Analytics-Extension',
     link: 'https://chromewebstore.google.com/detail/pokernow-assistant/kbaibgafcamlpfbhklaigpgemgoifdfe?pli=1',
