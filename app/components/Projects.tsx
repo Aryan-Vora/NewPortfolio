@@ -20,7 +20,7 @@ const projects = [
   {
     title: 'CinemaBlend',
     description:
-      'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy. Built with FastAPI and Next.js.',
+      'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy.',
     code: 'https://github.com/Aryan-Vora/letterboxblend',
     link: 'https://cinemablend.vercel.app/',
     image: '/project_pictures/cinemablend.png',
@@ -29,7 +29,7 @@ const projects = [
   {
     title: 'StockSentiment',
     description:
-      'A full-stack app to analyze and visualize stock sentiment using Reddit posts and financial data. Fetched stock data from yFinance and Reddit posts via API, applied VADER sentiment analysis, and displayed sentiment scores with stock trends on an interactive dashboard. Built with FastAPI (backend) and Next.js (frontend). Deployed backend on Amazon EC2 and frontend on Vercel',
+      'A full-stack app to analyze and visualize stock sentiment using Reddit posts and financial data. Fetched stock data from yFinance and Reddit posts via API, applied VADER sentiment analysis, and displayed sentiment scores with stock trends on an interactive dashboard. Deployed backend on Amazon EC2 and frontend on Vercel',
     code: 'https://github.com/Aryan-Vora/StockSentiment',
     link: 'https://stock-sentiment-eosin.vercel.app/',
     image: '/project_pictures/stocksentiment.png',
