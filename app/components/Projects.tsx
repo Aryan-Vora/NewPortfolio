@@ -8,15 +8,8 @@ import { Share2, Video } from 'lucide-react';
 import { AnimatedGradient } from './ui/animated-gradient';
 
 const projects = [
-  {
-    title: 'CinemaBlend',
-    description:
-      'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy.',
-    code: 'https://github.com/Aryan-Vora/letterboxblend',
-    link: 'https://cinemablend.vercel.app/',
-    image: '/project_pictures/cinemablend.png',
-    technologies: ['TypeScript', 'Next.js', 'OMDB API', 'FastAPI', 'Python'],
-  },
+
+
   {
     title: 'StockSentiment',
     description:
@@ -35,6 +28,24 @@ const projects = [
     technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
   },
   {
+    title: 'BrowserLogger',
+    description:
+      'BrowserLogger is a website that shows everything a browser can reveal about a user without asking for permission, including user actions, device info, location, network details, and more, all through JavaScript and public APIs. It captures things like mouse moves, keystrokes, IP address, screen size, etc.',
+    image: '/project_pictures/browserlogger.png',
+    link: 'https://aryan-vora.github.io/browserlogger/',
+    code: 'https://github.com/Aryan-Vora/browserlogger',
+    technologies: ['JavaScript', 'HTML', 'CSS'],
+  },
+  {
+    title: 'CinemaBlend',
+    description:
+      'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy.',
+    code: 'https://github.com/Aryan-Vora/letterboxblend',
+    link: 'https://cinemablend.vercel.app/',
+    image: '/project_pictures/cinemablend.png',
+    technologies: ['TypeScript', 'Next.js', 'OMDB API', 'FastAPI', 'Python'],
+  },
+  {
     title: 'AI-Powered Receipt Scanner',
     description:
       'During my internship at Squeezee, developed a cross-platform receipt-scanning application using React for the frontend and Firebase for the backend, ensuring seamless functionality across devices. Integrated OCRSpace for text extraction from scanned receipts and parsed and validated OCR results using a Large Language Model (LLM), converting unstructured text into structured, accurate data for storage and future analysis.',
@@ -49,15 +60,7 @@ const projects = [
       'OpenAI',
     ],
   },
-  {
-    title: 'BrowserLogger',
-    description:
-      'BrowserLogger is a website that shows everything a browser can reveal about a user without asking for permission, including user actions, device info, location, network details, and more, all through JavaScript and public APIs. It captures things like mouse moves, keystrokes, IP address, screen size, etc.',
-    image: '/project_pictures/browserlogger.png',
-    link: 'https://aryan-vora.github.io/browserlogger/',
-    code: 'https://github.com/Aryan-Vora/browserlogger',
-    technologies: ['JavaScript', 'HTML', 'CSS'],
-  },
+
   {
     title: 'SoulSync',
     description:
