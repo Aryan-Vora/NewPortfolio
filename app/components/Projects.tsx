@@ -36,15 +36,15 @@ const projects = [
     code: 'https://github.com/Aryan-Vora/browserlogger',
     technologies: ['JavaScript', 'HTML', 'CSS'],
   },
-  {
-    title: 'CinemaBlend',
-    description:
-      'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy.',
-    code: 'https://github.com/Aryan-Vora/letterboxblend',
-    link: 'https://cinemablend.vercel.app/',
-    image: '/project_pictures/cinemablend.png',
-    technologies: ['TypeScript', 'Next.js', 'OMDB API', 'FastAPI', 'Python'],
-  },
+  // {
+  //   title: 'CinemaBlend',
+  //   description:
+  //     'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy.',
+  //   code: 'https://github.com/Aryan-Vora/letterboxblend',
+  //   link: 'https://cinemablend.vercel.app/',
+  //   image: '/project_pictures/cinemablend.png',
+  //   technologies: ['TypeScript', 'Next.js', 'OMDB API', 'FastAPI', 'Python'],
+  // },
   {
     title: 'AI-Powered Receipt Scanner',
     description:
@@ -60,16 +60,15 @@ const projects = [
       'OpenAI',
     ],
   },
-
-  {
-    title: 'SoulSync',
-    description:
-      'A personality-driven music discovery platform that matches users with songs based on their unique traits and characteristics. Features an intelligent quiz system with over 50 personality questions, where users answer 12 dynamically selected questions that adapt based on previous responses.',
-    code: 'https://github.com/Aryan-Vora/SoulSync',
-    link: 'https://soulsyncmusic.vercel.app/',
-    image: '/project_pictures/soulsync.png',
-    technologies: ['TypeScript', 'Next.js', 'Spotify API', 'OpenAI'],
-  },
+  // {
+  //   title: 'SoulSync',
+  //   description:
+  //     'A personality-driven music discovery platform that matches users with songs based on their unique traits and characteristics. Features an intelligent quiz system with over 50 personality questions, where users answer 12 dynamically selected questions that adapt based on previous responses.',
+  //   code: 'https://github.com/Aryan-Vora/SoulSync',
+  //   link: 'https://soulsyncmusic.vercel.app/',
+  //   image: '/project_pictures/soulsync.png',
+  //   technologies: ['TypeScript', 'Next.js', 'Spotify API', 'OpenAI'],
+  // },
   {
     title: 'Github Vulnerability Scanner',
     description:
