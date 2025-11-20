@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'StockSentiment',
     description:
-      'A full-stack app to analyze and visualize stock sentiment using Reddit posts and financial data. Fetched stock data from yFinance and Reddit posts via API, applied VADER sentiment analysis, and displayed sentiment scores with stock trends on an interactive dashboard. Deployed backend on Amazon EC2 and frontend on Vercel',
+      'I kept hearing the wild stock calls on WallStreetBets and wanted to see if they were actually giving good advice. I built an app where a user enters a ticker, and the system pulls Reddit posts related to that stock, analyzes their sentiment with VADER, and compares the mood to real price movements using yFinance. The dashboard shows how the sentiment lines up with the actual chart which suprisingly revealed that the community is so reliably wrong that doing the opposite might be profitable. The backend is now on Render, so if you decide to test it out the first request takes about a minute to spin up, but everything after that should be quick.',
     code: 'https://github.com/Aryan-Vora/StockSentiment',
     link: 'https://stock-sentiment-eosin.vercel.app/',
     image: '/project_pictures/stocksentiment.png',
@@ -22,7 +22,7 @@ const projects = [
   {
     title: 'Hand Tracking and Gesture Detection with AR Smart Glasses',
     description:
-      "Collaborated with The Digital Camera and Computer Vision Lab at NTU on a real-time hand tracking and gesture recognition system for AR smart glasses, integrating Time-of-Flight (ToF) sensors with Mediapipe for precise 3D hand reconstruction and interactive capabilities. Through optimization efforts, the system's ability to simultaneously process ToF depth data and hand landmark tracking was significantly enhanced, resulting in a 60% FPS improvement from 15 to 24 FPS. Additionally, developed visualization tools for hand tracking and depth data monitoring, which streamlined debugging processes and enabled further system performance optimizations.",
+      "I worked with the Digital Camera and Computer Vision Lab at NTU on a real-time hand-tracking and gesture-recognition system for AR smart glasses. The project combined Time-of-Flight depth sensors with MediaPipe to build accurate 3D hand reconstructions that could support interactive controls. I focused on optimizing the pipeline so it could process both ToF depth data and hand-landmark tracking at the same time, which raised performance from 15 FPS to 24 FPS (a 60% improvement). I also built visualization tools for hand tracking and depth data, which made debugging faster and helped guide further optimizations.",
     image: '/project_pictures/handtracking.png',
     code: 'https://github.com/Aryan-Vora/handTrackingArvora/tree/main',
     technologies: ['Python', 'MediaPipe', 'OpenCV', 'NumPy'],
@@ -30,36 +30,22 @@ const projects = [
   {
     title: 'BrowserLogger',
     description:
-      'BrowserLogger is a website that shows everything a browser can reveal about a user without asking for permission, including user actions, device info, location, network details, and more, all through JavaScript and public APIs. It captures things like mouse moves, keystrokes, IP address, screen size, etc.',
+      'In college, I was taking a lot of exams on Canvas, and it made me wonder how much a website could learn about someone without ever asking for permission. That curiosity turned into me building a site that shows, in real time, what your browser exposes by default. It tracks things like mouse movements, keystrokes, screen size, device details, network information, IP address, geolocation (when available), and all sorts of other data through JavaScript and public APIs. The goal was to create a practical demo that makes people aware of how much they reveal just by visiting a page. ',
     image: '/project_pictures/browserlogger.png',
     link: 'https://aryan-vora.github.io/browserlogger/',
     code: 'https://github.com/Aryan-Vora/browserlogger',
     technologies: ['JavaScript', 'HTML', 'CSS'],
   },
-  // {
-  //   title: 'CinemaBlend',
-  //   description:
-  //     'A movie recommendation platform that matches users based on their Letterboxd profiles. Uses advanced algorithms to analyze genre preferences, actor/director affinities, viewing patterns, and plot semantics from both users to generate personalized movie suggestions. Designed to help friends, couples, and groups find movies they’ll both enjoy.',
-  //   code: 'https://github.com/Aryan-Vora/letterboxblend',
-  //   link: 'https://cinemablend.vercel.app/',
-  //   image: '/project_pictures/cinemablend.png',
-  //   technologies: ['TypeScript', 'Next.js', 'OMDB API', 'FastAPI', 'Python'],
-  // },
   {
-    title: 'AI-Powered Receipt Scanner',
+    title: 'CinemaBlend',
     description:
-      'During my internship at Squeezee, developed a cross-platform receipt-scanning application using React for the frontend and Firebase for the backend, ensuring seamless functionality across devices. Integrated OCRSpace for text extraction from scanned receipts and parsed and validated OCR results using a Large Language Model (LLM), converting unstructured text into structured, accurate data for storage and future analysis.',
-    image: '/project_pictures/receipt-scanner.png',
-    code: 'https://github.com/Aryan-Vora/SqueezeeReceiptScanner',
-    technologies: [
-      'JavaScript',
-      'React',
-      'Firebase',
-      'GCP',
-      'OCRSpace',
-      'OpenAI',
-    ],
+      'I’ve always found it tricky to pick a movie or show with a friend that we’ll both actually enjoy. Letterboxd lets people track and rate what they’ve watched, so I scraped that data and built an algorithm that looks at genres, actors, directors, IMDb ratings, release dates, and plot descriptions. Now, two people can just enter their Letterboxd usernames and get a list of movies and shows they’ll both like and also haven’t seen yet.',
+    code: 'https://github.com/Aryan-Vora/letterboxblend',
+    link: 'https://cinemablend.vercel.app/',
+    image: '/project_pictures/cinemablend.png',
+    technologies: ['TypeScript', 'Next.js', 'OMDB API', 'FastAPI', 'Python'],
   },
+
   // {
   //   title: 'SoulSync',
   //   description:
@@ -72,7 +58,7 @@ const projects = [
   {
     title: 'Github Vulnerability Scanner',
     description:
-      'Web app that scans public GitHub repositories for vulnerabilities in the codebase, dependencies, and executable files. It uses GitHub API to fetch repository data and Gemini-2.0 Flash analyze it for potential security issues. The app provides a user-friendly interface for users to input repository URLs and view scan results, including identified vulnerabilities and recommendations to fix these.',
+      'My team and I built a web app during a hackathon that scans public GitHub repositories for vulnerabilities in code, dependencies, and executables. It uses the GitHub API to fetch repository data and Gemini-2.0 Flash to analyze potential security issues. After the hackathon, I expanded the project to improve performance by making it faster, reducing token usage, and enhancing results through a reduction in excessive context, while also improving the UI and overall user experience.',
     image: '/project_pictures/github_scanner.png',
     code: 'https://github.com/Jeeevii/SecureAI',
     demo: 'https://www.youtube.com/watch?v=f1LCjcX3dho',
@@ -88,7 +74,7 @@ const projects = [
   {
     title: 'Pokernow Analytics Extension',
     description:
-      'Developed a browser extension that enhances the PokerNow online poker platform by providing real-time analytics and game insights. Implemented features such as tracking player statistics, win rates, and betting patterns to help users make data-driven decisions. Built using JavaScript to ensure seamless integration with the PokerNow interface. Has hundreds of active current users.',
+      'In my first year of college, I played a lot of online poker with friends on, but I was new and usually lost. That inspired me to build a browser extension specifically for the site we played on that could give me real-time help during the game. It analyzes the table, shows the odds of my possible hands, and calculates the chance that other players hold something stronger. I published it on the Chrome Web Store, and it now has several hundred active users.',
     image: '/project_pictures/pokernow.png',
     code: 'https://github.com/Aryan-Vora/PokerNow-Analytics-Extension',
     link: 'https://chromewebstore.google.com/detail/pokernow-assistant/kbaibgafcamlpfbhklaigpgemgoifdfe?pli=1',
@@ -103,6 +89,21 @@ const projects = [
     demo: 'https://www.youtube.com/watch?v=NyL2scv_29g',
     technologies: ['Processing.java'],
   },
+  //  {
+  //   title: 'AI-Powered Receipt Scanner',
+  //   description:
+  //     'During my internship at Squeezee, developed a cross-platform receipt-scanning application using React for the frontend and Firebase for the backend, ensuring seamless functionality across devices. Integrated OCRSpace for text extraction from scanned receipts and parsed and validated OCR results using a Large Language Model (LLM), converting unstructured text into structured, accurate data for storage and future analysis.',
+  //   image: '/project_pictures/receipt-scanner.png',
+  //   code: 'https://github.com/Aryan-Vora/SqueezeeReceiptScanner',
+  //   technologies: [
+  //     'JavaScript',
+  //     'React',
+  //     'Firebase',
+  //     'GCP',
+  //     'OCRSpace',
+  //     'OpenAI',
+  //   ],
+  // },
 ];
 
 const Projects = () => {

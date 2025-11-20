@@ -33,20 +33,19 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           {[
-  "I love building whatever ideas come to mind and enjoy turning them into real projects. I'm always working on side projects and try to build out every new idea I have. Coding is something I genuinely enjoy, especially watching my ideas come to life.",
-  "Problem-solving and finding creative solutions to complex challenges is where I thrive. With experience across different technologies, I'm eager to keep learning and contribute to meaningful work in an entry-level role.",
-  "Outside of coding, I enjoy staying active. I spend time at the gym, play pickleball and volleyball, and like to game in my free time. I'm always open to trying new things and connecting with others who enjoy building and creating."
-]
-.map((paragraph, index) => (
-            <motion.p
-              key={index}
-              className="text-gray-300 mb-6"
-              whileHover={{ scale: 1.05, color: '#60A5FA' }}
-              transition={{ duration: 0.2 }}
-            >
-              {paragraph}
-            </motion.p>
-          ))}
+            "I love building whatever ideas come to mind and enjoy turning them into real projects. I'm always working on side projects and try to build out every new idea I have. Coding is something I genuinely enjoy, especially love seeing my ideas come to life.",
+            "Problem-solving and finding creative solutions to complex challenges is where I thrive. With experience across different technologies, I'm eager to keep learning and contribute to meaningful work.",
+          ]
+            .map((paragraph, index) => (
+              <motion.p
+                key={index}
+                className="text-gray-300 mb-6"
+                whileHover={{ scale: 1.05, color: '#60A5FA' }}
+                transition={{ duration: 0.2 }}
+              >
+                {paragraph}
+              </motion.p>
+            ))}
         </motion.div>
       </div>
     </section>
