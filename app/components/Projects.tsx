@@ -74,7 +74,7 @@ const projects = [
   {
     title: 'Pokernow Analytics Extension',
     description:
-      'In my first year of college, I played a lot of online poker with friends on, but I was new and usually lost. That inspired me to build a browser extension specifically for the site we played on that could give me real-time help during the game. It analyzes the table, shows the odds of my possible hands, and calculates the chance that other players hold something stronger. I published it on the Chrome Web Store, and it now has several hundred active users.',
+      'I built a browser extension for an online poker site that provides real-time support during games. It reads the table state, calculates the odds for every possible hand I could make, and estimates how likely it is that other players are holding something stronger. It updates continuously as cards are dealt, so the numbers shift in real time and help guide decision-making. After publishing it on the Chrome Web Store, it picked up several hundred active users who rely on it for the same kind of live analysis.',
     image: '/project_pictures/pokernow.png',
     code: 'https://github.com/Aryan-Vora/PokerNow-Analytics-Extension',
     link: 'https://chromewebstore.google.com/detail/pokernow-assistant/kbaibgafcamlpfbhklaigpgemgoifdfe?pli=1',
