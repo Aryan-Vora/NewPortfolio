@@ -30,7 +30,7 @@ const projects = [
   {
     title: 'BrowserLogger',
     description:
-      'In college, I was taking a lot of exams on Canvas, and it made me wonder how much a website could learn about someone without ever asking for permission. That curiosity turned into me building a site that shows, in real time, what your browser exposes by default. It tracks things like mouse movements, keystrokes, screen size, device details, network information, IP address, geolocation (when available), and all sorts of other data through JavaScript and public APIs. The goal was to create a practical demo that makes people aware of how much they reveal just by visiting a page. ',
+      'I got curious about how much a website can learn about someone without asking for anything, so I built a page that shows it all in real time. It displays every small action such as mouse position, clicks, scroll depth, keystrokes, text selections, focus changes, time on the page, and resize events, along with device and browser details like the operating system, screen size, viewport, and language settings. It also reveals network-level data such as the public IP address, rough location, coordinates, ISP, organization, referrer, current URL, timezone, local time, battery status, and cookie support. All of it comes from basic JavaScript and public APIs that run the moment the page loads.',
     image: '/project_pictures/browserlogger.png',
     link: 'https://aryan-vora.github.io/browserlogger/',
     code: 'https://github.com/Aryan-Vora/browserlogger',
