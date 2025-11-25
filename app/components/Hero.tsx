@@ -28,7 +28,7 @@ const Hero = () => {
             />
           </h2>
           <p className="text-gray-400 mb-8">
-            I’m a Computer Science graduate passionate about building projects and solving problems. I’m currently looking for entry-level roles where I can apply my skills and work on innovative projects.
+            I’m a Computer Science graduate who loves building projects and solving problems, currently applying my skills in everyday work.
           </p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}
