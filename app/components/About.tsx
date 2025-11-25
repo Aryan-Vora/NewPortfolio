@@ -33,7 +33,7 @@ const About = () => {
           transition={{ duration: 0.5, delay: 0.2 }}
         >
           {[
-            "I love building whatever ideas come to mind and enjoy turning them into real projects. I'm always working on side projects and try to build out every new idea I have. Coding is something I genuinely enjoy, especially love seeing my ideas come to life.",
+            "I love building whatever ideas come to mind and enjoy turning them into real projects. I'm always working on side projects and try to build out every new idea I have. Coding is something I genuinely enjoy, and I especially love seeing my ideas come to life.",
             "Problem-solving and finding creative solutions to complex challenges is where I thrive. With experience across different technologies, I'm eager to keep learning and contribute to meaningful work.",
           ]
             .map((paragraph, index) => (
