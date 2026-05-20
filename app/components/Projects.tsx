@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'StockSentiment',
     description:
-      'I kept hearing the wild stock calls on WallStreetBets and wanted to see if they were actually giving good advice. I built an app where a user enters a ticker, and the system pulls Reddit posts related to that stock, analyzes their sentiment with VADER, and compares the mood to real price movements using yFinance. The dashboard shows how the sentiment lines up with the actual chart which suprisingly revealed that the community is so reliably wrong that doing the opposite might be profitable. The backend is now on Render, so if you decide to test it out the first request takes about a minute to spin up, but everything after that should be quick.',
+      'After hearing about WallStreetBets I wanted to see if they were actually giving good advice. So I built this website where a user enters a ticker, and the system pulls Reddit posts related to that stock, analyzes their sentiment with VADER, and compares the mood to real price movements using yFinance. The dashboard shows how the sentiment lines up with the actual chart which suprisingly revealed that the community is so reliably wrong that doing the opposite might be profitable (Inverse Cramer?). The backend is now on Render, so if you decide to test it out the first request takes about a minute to spin up, but everything after that should be quick.',
     code: 'https://github.com/Aryan-Vora/StockSentiment',
     link: 'https://stock-sentiment-eosin.vercel.app/',
     image: '/project_pictures/stocksentiment.png',
@@ -39,7 +39,7 @@ const projects = [
   {
     title: 'CinemaBlend',
     description:
-      'I’ve always found it tricky to pick a movie or show with a friend that we’ll both actually enjoy. Letterboxd lets people track and rate what they’ve watched, so I scraped that data and built an algorithm that looks at genres, actors, directors, IMDb ratings, release dates, and plot descriptions. Now, two people can just enter their Letterboxd usernames and get a list of movies and shows they’ll both like and also haven’t seen yet.',
+      'I\'ve always found it tricky to pick a movie or show with a friend that we\'ll both actually enjoy. Letterboxd lets people track and rate what they\'ve watched, so I scraped that data and built an algorithm that looks at genres, actors, directors, IMDb ratings, release dates, and plot descriptions. Now, two people can just enter their Letterboxd usernames and get a list of movies and shows they\'ll both like and also haven\'t seen yet.',
     code: 'https://github.com/Aryan-Vora/letterboxblend',
     link: 'https://cinemablend.vercel.app/',
     image: '/project_pictures/cinemablend.png',
@@ -74,7 +74,7 @@ const projects = [
   {
     title: 'Pokernow Analytics Extension',
     description:
-      'I built a browser extension for an online poker site that provides real-time support during games. It reads the table state, calculates the odds for every possible hand I could make, and estimates how likely it is that other players are holding something stronger. It updates continuously as cards are dealt, so the numbers shift in real time and help guide decision-making. After publishing it on the Chrome Web Store, it picked up several hundred active users who rely on it for the same kind of live analysis.',
+      'I built a browser extension for PokerNow that provides real-time support during games. It reads the table state, calculates the odds for every possible hand I could make, and estimates how likely it is that other players are holding something stronger. It updates continuously as cards are dealt, so the numbers shift in real time and help guide decision-making. After publishing it on the Chrome Web Store, it got 800 users before getting taken down.',
     image: '/project_pictures/pokernow.png',
     code: 'https://github.com/Aryan-Vora/PokerNow-Analytics-Extension',
     link: 'https://chromewebstore.google.com/detail/pokernow-assistant/kbaibgafcamlpfbhklaigpgemgoifdfe?pli=1',
