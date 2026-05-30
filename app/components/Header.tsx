@@ -78,7 +78,8 @@ const Header = () => {
                   className="absolute top-full left-0 right-0 bg-[#0A0A0A] shadow-lg"
                 >
                   <ul className="py-4">
-                    {['about', 'skills', 'projects'].map((item) => (
+                    {[
+                      'skills', 'projects'].map((item) => (
                       <li key={item} className="px-6 py-2">
                         <button
                           onClick={() => {
@@ -98,7 +99,7 @@ const Header = () => {
           </>
         ) : (
           <ul className="flex space-x-6">
-            {['about', 'skills', 'projects'].map((item) => (
+              {['skills', 'projects'].map((item) => (
               <li key={item}>
                 <button
                   onClick={() => scrollToSection(item)}

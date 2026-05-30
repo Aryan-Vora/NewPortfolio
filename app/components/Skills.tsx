@@ -10,45 +10,45 @@ const skillGroups = [
     category: 'Programming Languages',
     skills: [
       {
-        name: 'Python',
-        icon: '/icons/python.svg',
+        name: 'TypeScript',
+        icon: '/icons/typescript.svg',
       },
       {
         name: 'JavaScript',
         icon: '/icons/javascript.svg',
       },
       {
-        name: 'C/C++',
-        icon: '/icons/c.svg',
+        name: 'Python',
+        icon: '/icons/python.svg',
       },
       {
-        name: 'Java',
-        icon: '/icons/java.svg',
+        name: 'C/C++',
+        icon: '/icons/c.svg',
       },
     ],
   },
   {
-    category: 'AI & Machine Learning',
+    category: 'Frameworks',
     skills: [
       {
-        name: 'langchain',
-        icon: '/icons/langchain.svg',
+        name: 'ReactJS',
+        icon: '/icons/reactjs.svg',
       },
       {
-        name: 'llamaindex',
-        icon: '/icons/llamaindex.svg',
+        name: 'NextJS',
+        icon: '/icons/nextjs.svg',
       },
       {
-        name: 'scikit-learn',
-        icon: '/icons/scikit-learn.svg',
+        name: 'NestJS',
+        icon: '/icons/nestjs.svg',
       },
       {
-        name: 'NumPy',
-        icon: '/icons/numpy.svg',
+        name: 'FastAPI',
+        icon: '/icons/fastapi.svg',
       },
       {
-        'name': 'OpenCV',
-        'icon': '/icons/opencv.svg',
+        name: 'Flask',
+        icon: '/icons/flask.svg',
       },
     ],
   },
@@ -78,39 +78,23 @@ const skillGroups = [
     ],
   },
   {
-    category: 'Database Management',
+    category: 'Databases & Tools',
     skills: [
       {
         name: 'PostgreSQL',
         icon: '/icons/postgresql.svg',
       },
       {
-        name: 'MongoDB',
-        icon: '/icons/mongodb.svg',
-      },
-      {
-        name: 'Supabase',
-        icon: '/icons/supabase.svg',
-      },
-    ],
-  },
-  {
-    category: 'Software Development & Version Control',
-    skills: [
-      {
         name: 'Git',
         icon: '/icons/git.svg',
       },
       {
-        name: 'CI/CD',
-        icon: '/icons/cicd.svg',
-      },
-      {
-        name: 'Linux',
-        icon: '/icons/linux.svg',
+        name: 'Docker',
+        icon: '/icons/docker.svg',
       },
     ],
   },
+
 ];
 const Skills = () => {
   const [ref, inView] = useInView({

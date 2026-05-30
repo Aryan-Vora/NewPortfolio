@@ -28,7 +28,7 @@ const Hero = () => {
             />
           </h2>
           <p className="text-gray-400 mb-8">
-            I'm a Computer Science graduate who loves building projects and solving problems. Currently working as a software developer at Solace Health.
+            I like building projects, solving problems, and figuring things out as I go.
           </p>
           <motion.div
             initial={{ opacity: 0, y: 20 }}

@@ -35,7 +35,7 @@ export default function Home(props: HomeProps) {
       <div ref={childDiv}>
         <Hero />
       </div>
-      <About />
+      {/* <About /> */}
       <Skills />
       <Projects />
     </>
