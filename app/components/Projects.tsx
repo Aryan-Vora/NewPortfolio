@@ -13,7 +13,7 @@ const projects = [
   {
     title: 'StockSentiment',
     description:
-      'After hearing about WallStreetBets I wanted to see if they were actually giving good advice. So I built this website where a user enters a ticker, and the system pulls Reddit posts related to that stock, analyzes their sentiment with VADER, and compares the mood to real price movements using yFinance. The dashboard shows how the sentiment lines up with the actual chart which suprisingly revealed that the community is so reliably wrong that doing the opposite might be profitable (Inverse Cramer?). The backend is now on Render, so if you decide to test it out the first request takes about a minute to spin up, but everything after that should be quick.',
+      'After hearing so many stories about WallStreetBets influencing stocks, I got curious whether the community was actually good at predicting price movements. So I built a website where users enter a ticker, and the system pulls Reddit posts related to that stock, analyzes their sentiment with VADER, and compares the results against real price movements using yFinance. The dashboard visualizes how sentiment aligns with the actual stock chart and, surprisingly, revealed that the community is often wrong enough that doing the opposite might be profitable (Inverse Cramer?). The backend is hosted on Render, so the first request may take about a minute while the service spins up, but the next requests should be much faster.',
     code: 'https://github.com/Aryan-Vora/StockSentiment',
     link: 'https://stock-sentiment-eosin.vercel.app/',
     image: '/project_pictures/stocksentiment.png',
